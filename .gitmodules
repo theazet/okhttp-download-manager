@@ -1,0 +1,4 @@
+[submodule "okhttp-download-manager"]
+	path = okhttp-download-manager
+	url = https://github.com/theazet/okhttp-download-manager
+	branch = release/0.1.0
