@@ -6,7 +6,7 @@
 #### 使用说明
 - 首先引入框架
 ```
-com.aze:okhttp-download-manager:0.1.3
+com.aze:okhttp-download-manager:0.1.1
 ```
 
 1. 在您的Application中注册下载管理器
