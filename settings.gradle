@@ -1,2 +1,2 @@
-include ':app', ':okhttp-download-manager'
+include ':app'
 rootProject.name='DownloaderDemo'

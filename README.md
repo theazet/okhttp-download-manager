@@ -1,4 +1,4 @@
-# download-master
+# okhttp-download-master
 
 #### 介绍
 使用该框架可以通过简单配置，便可以实现文件下载及下载状态实时管理，支持断点重连、排队下载等常用功能，如果您在使用中有疑问、遇到了Bug或者有新的建议，请反馈至我的邮箱theazegm@gmail.com
@@ -36,7 +36,7 @@ class MyApp : Application() {
 Observer.Builder(id).create(object :AbsDownloadService(){
     			//可以对全部或某个生命周期进行观察
     			override fun onStart(taskBean: TaskBean) {
-                    super.onResume(taskBean)
+                    super.onStart(taskBean)
                 }
                 override fun onResume(taskBean: TaskBean) {
                     super.onResume(taskBean)
@@ -67,7 +67,7 @@ DownloadManager.pause(id)
 Observer.Builder(id).get()?.destory()
 ```
 
-7. 销毁下载管理器
+7. 销毁整个下载管理器
 
 ```
 DownloadManager.destroy()
