@@ -61,10 +61,16 @@ DownloadManager.start(id)
 DownloadManager.pause(id)
 ```
 
-6. 销毁下载任务(销毁任务在数据库中记录)
+6. 销毁观察者,防止内存泄漏
 
 ```
-DownloadManager.destroy(id)
+Observer.Builder(id).get()?.destory()
+```
+
+7. 销毁下载管理器
+
+```
+DownloadManager.destroy()
 ```
 
 #### 下载的生命周期
