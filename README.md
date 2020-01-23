@@ -6,7 +6,9 @@
 #### 使用说明
 - 首先引入框架
 ```
-com.aze:okhttp-download-manager:0.1.1
+//因为是基于OkHttp，所以必须引入OkHttp，您可以自己选择OkHttp版本
+implementation("com.squareup.okhttp3:okhttp:4.3.1")
+implementation("com.aze:okhttp-download-manager:0.1.1")
 ```
 
 1. 在您的Application中注册下载管理器
